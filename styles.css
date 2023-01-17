@@ -20,6 +20,8 @@ header {
     display: flex;
     width: 100%;
     padding: 1.5rem;
+    padding-bottom: 0;
+    background-color: white;
 }
 
 .title {
@@ -112,4 +114,17 @@ li:hover .submenu {
     padding: 0rem 1rem;
     font-size: 2.2rem;
     font-style: italic;
+}
+
+#home {
+    background-image: url('images/m1.jpg');
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    font-size: 3rem;
 }
