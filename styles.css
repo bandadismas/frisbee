@@ -62,17 +62,6 @@ header ul {
     transform: scaleX(1);
 }
 
-.social li {
-    padding: 1rem 0.3rem;
-    font-size: 1rem;
-}
-
-.coro {
-    padding: 0rem 1rem;
-    font-size: 2.2rem;
-    font-style: italic;
-}
-
 .submenu {
     display: flex;
     flex-direction: column;
@@ -85,7 +74,7 @@ header ul {
     opacity: 0;
     visibility: hidden;
     transform: translateY(50px);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 li:hover .submenu {
@@ -102,4 +91,25 @@ li:hover .submenu {
 
 .nav-item ul li:hover {
     background-color: #00ABC7;
+}
+
+.social li {
+    padding: 1rem 0.3rem;
+    font-size: 1.2rem;
+    color: #00577D;
+}
+
+.social li:hover {
+    opacity: 0.7;
+}
+
+.line {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.coro {
+    padding: 0rem 1rem;
+    font-size: 2.2rem;
+    font-style: italic;
 }
