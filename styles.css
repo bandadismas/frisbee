@@ -1,0 +1,91 @@
+/* hover color underline #00ABC7 */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.title {
+    background-image: url('images/frisbie.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 50px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.nav-item {
+    padding: 1rem 0.8rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    position: relative;
+    margin-bottom: 20px;
+} 
+
+.social li {
+    padding: 1rem 0.3rem;
+    font-size: 1rem;
+}
+
+.coro {
+    padding: 0rem 1rem;
+    font-size: 2.2rem;
+    font-style: italic;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 100%;
+    padding: 0;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    top: 60px;
+    transform: translateY(0px);
+}
+
+.nav-item ul li {
+    padding: 10px;
+    transition: all 1s ease;
+}
+
+.nav-item ul li:hover {
+    background-color: #00ABC7;
+}
