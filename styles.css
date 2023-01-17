@@ -46,7 +46,21 @@ header ul {
     font-size: 1rem;
     position: relative;
     margin-bottom: 20px;
-} 
+}
+
+.nav-item:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    background-color: #00ABC7;
+    transition: 0.4s;
+}
+.nav-item:hover:before {
+    transform: scaleX(1);
+}
 
 .social li {
     padding: 1rem 0.3rem;
