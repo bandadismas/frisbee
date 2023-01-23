@@ -54,6 +54,7 @@ header ul {
     content: "";
     position: absolute;
     bottom: 0;
+    left: 0;
     width: 100%;
     transform: scaleX(0);
     height: 2px;
@@ -117,7 +118,7 @@ li:hover .submenu {
 }
 
 #home {
-    background-image: url('images/m1.jpg');
+    background-image: url('images/fr1.jpg');
     height: 90vh;
     width: 100%;
     background-repeat: no-repeat;
