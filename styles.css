@@ -22,6 +22,7 @@ header {
     padding: 1.5rem;
     padding-bottom: 0;
     background-color: white;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
 }
 
 .title {
@@ -127,5 +128,7 @@ li:hover .submenu {
     display: grid;
     place-items: center;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 4rem;
+    color: white;
 }
+
