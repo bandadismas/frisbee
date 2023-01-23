@@ -132,3 +132,25 @@ li:hover .submenu {
     color: white;
 }
 
+/* guides */
+.guide {
+    position: relative;
+}
+.top-guide {
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    min-height: 60vh;
+}
+
+.bottom-guide {
+    background-image: url('images/n1.jpg');
+    height: 60vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0,0.7);
+}
