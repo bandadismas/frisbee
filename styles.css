@@ -297,6 +297,25 @@ li:hover .submenu {
     margin-top: 4rem;
 }
 
+.dif-btn:hover {
+    background-color: #00ABC7;
+    border: 2px solid #00ABC7;
+}
+
+.btn-move {
+    animation: move 2s ease;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 /* numbers */
 
