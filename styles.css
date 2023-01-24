@@ -225,8 +225,62 @@ li:hover .submenu {
     opacity: 0;
   }
 
-
   .guide-card:hover .back{
     opacity: 0.8;
     z-index: 10;
+}
+
+.dif {
+    display: flex;
+    background-color: #fff;
+    padding: 5rem 3rem;
+}
+
+.dif-holder {
+    flex: 1 1 45vw;
+    margin: 10px;
+    min-width: 600px;
+}
+
+.dif-header h1 {
+    color: #00577D;
+}
+
+.dif-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: #00577D;
+}
+
+.dif-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 4rem;
+    top: 4rem;
+    background-image: url('images/dif.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.dif-header {
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.dif-btn {
+    text-transform: uppercase;
+    padding: 0.7rem 1.5rem;
+    border: 2px solid gray;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-top: 4rem;
+}
+
+.dif-btn:hover {
+    background-color: #00ABC7;
+    border: 2px solid #00ABC7;
 }
