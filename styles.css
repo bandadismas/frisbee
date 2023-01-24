@@ -180,6 +180,22 @@ li:hover .submenu {
     background-repeat: no-repeat;
     transform-style: preserve-3d;
     text-transform: uppercase;
+    transition: all 1s ease;
+}
+
+.guide-card-grow {
+    animation: grow 2s ease;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .guide-card:nth-of-type(1) {
@@ -281,10 +297,6 @@ li:hover .submenu {
     margin-top: 4rem;
 }
 
-.dif-btn:hover {
-    background-color: #00ABC7;
-    border: 2px solid #00ABC7;
-}
 
 /* numbers */
 
