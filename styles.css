@@ -23,6 +23,7 @@ header {
     padding-bottom: 0;
     background-color: white;
     box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
+    z-index: 100;
 }
 
 .title {
@@ -62,6 +63,7 @@ header ul {
     background-color: #00ABC7;
     transition: 0.4s;
 }
+
 .nav-item:hover:before {
     transform: scaleX(1);
 }
@@ -133,9 +135,12 @@ li:hover .submenu {
 }
 
 /* guides */
-.guide {
+.guides {
     position: relative;
+    width: 100%;
+    background-color: green;
 }
+
 .top-guide {
     background-color: white;
     text-align: center;
@@ -147,10 +152,81 @@ li:hover .submenu {
 
 .bottom-guide {
     background-image: url('images/n1.jpg');
-    height: 60vh;
+    height: 70vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.guide-cards {
+    position: absolute;
+    top: 35vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.guide-card {
+    height: 80vh;
+    min-height: 400px;
+    flex: 0 1 350px;
+    min-width: 300px;
+    margin: 2rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform-style: preserve-3d;
+    text-transform: uppercase;
+}
+
+.guide-card:nth-of-type(1) {
+    background-image: url('images/c1.jpg');
+}
+
+.guide-card:nth-of-type(2) {
+    background-image: url('images/mid-beach2.jpg');
+}
+
+.guide-card:nth-of-type(3) {
+    background-image: url('images/condos.webp');
+}
+
+.face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: cornflowerblue;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .guide-card:hover .face{
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+
+  .guide-card:hover .back{
+    opacity: 0.8;
+    z-index: 10;
 }
