@@ -230,6 +230,7 @@ li:hover .submenu {
     z-index: 10;
 }
 
+/* difference */
 .dif {
     display: flex;
     background-color: #fff;
@@ -283,4 +284,28 @@ li:hover .submenu {
 .dif-btn:hover {
     background-color: #00ABC7;
     border: 2px solid #00ABC7;
+}
+
+/* numbers */
+
+.numbers {
+    background-image: url('images/numbers.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 2rem;
+    padding-top: 4rem;
+
+    text-align: center;
+    color: #fff;
+}
+
+.numbers > h1 {
+    margin-bottom: 7rem;
+    margin-top: 2rem;
+}
+
+.numbers p {
+    margin: 2rem 0;
 }
