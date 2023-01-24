@@ -309,3 +309,14 @@ li:hover .submenu {
 .numbers p {
     margin: 2rem 0;
 }
+
+/* footer */
+footer {
+    background-color: #0F355F;
+    color: #fff;
+    opacity: 0.9;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
